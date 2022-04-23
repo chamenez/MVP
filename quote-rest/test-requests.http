@@ -1,0 +1,45 @@
+### Create an quote
+POST http://localhost:3000/quotes HTTP/1.1
+content-type: application/json
+
+{
+    "excerpt": "Creativity is for people with glasses who like to lie.",
+    "date": "01-18-22",
+    "patron": "Tommy"
+}
+
+### Create another quote
+POST http://localhost:3000/quotes HTTP/1.1
+content-type: application/json
+
+{
+    "excerpt": "Bro.",
+    "date": "01-18-22",
+    "patron": "Billy"
+}
+
+### Retrieve should return the 2 quotes we just created
+GET http://localhost:3000/quotes HTTP/1.1
+
+
+### Edit the first quote. 
+### NOTE: Set ID to the ID for first quote
+PUT http://localhost:3000/quotes/625f887560e33395c88f0d3b HTTP/1.1
+content-type: application/json
+
+{
+    "excerpt": "Drop off a train and eat hit",
+    "date": "12-12-12",
+    "patron": "Zach"
+}
+
+### Verify that reps value for 2nd quote is now different.
+GET http://localhost:3000/quotes HTTP/1.1
+
+
+### Delete the first quote.
+### NOTE: Set ID to the ID for Quote
+DELETE http://localhost:3000/quotes/625f8986daa2ab8f6eac7f9b HTTP/1.1
+
+### Verify that the first quote has been deleted
+GET http://localhost:3000/quotes HTTP/1.1
