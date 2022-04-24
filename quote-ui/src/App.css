@@ -1,0 +1,104 @@
+body {
+  background-color: #7a04eb
+}
+
+.App {
+  height: 100%;
+  background: linear-gradient( #120458, #7a04eb);
+  background-size: cover;
+  background-position: center;
+  align-items: center;
+  text-align: center;
+}
+
+.App-header {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: #fe75fe;
+}
+
+header {
+  padding: .5%;
+  margin-bottom: 0;
+  color: #ff00a0;
+  font-size: 18px;
+}
+
+.App-link {
+  color: #7a04eb;
+}
+
+td, th {
+  border: 3px solid #ff1241;
+  padding: 0px;
+}
+
+main {
+  min-height: 75vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: calc(10px + .8vmin);
+  color: #ff00a0;
+  overflow: hidden;
+}
+
+tr:nth-child(even){background-color: #fa75fa;}
+tr:nth-child(odd){background-color: #fa75fe;}
+
+table {
+  padding-top: 10px;
+  border-collapse: collapse;
+}
+
+tr:hover {
+  background-color: #ff00a0;
+  color: #fa75fa;
+}
+th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: center;
+  background-color: #7a04eb;
+  color: #ff00a0;
+}
+
+footer {
+  padding: 1%;
+  margin-bottom: 0;
+  color: #ff00a0;
+  font-size: calc(5px + 2vmin);
+}
+
+nav {
+  position: relative;
+  top: 3px
+}
+
+nav a {
+  padding: 5px 50px 5px 50px;
+  background-color: #7a04eb;
+  text-decoration: none;
+  color: #ff00a0;
+  line-height: 1;
+  vertical-align: middle;
+  border-right: 2px solid #ff1241;
+  border-left: 2px solid #ff1241;
+  font-size: 1.3em;
+  font-weight: bold;
+  border-radius: 3px;
+}
+
+nav a:hover {
+  color: #7a04eb;
+  background-color: #ff00a0;
+}
+
+h1 {font-size: 150%;}
+h2 {
+  font-size: 80%;
+}
